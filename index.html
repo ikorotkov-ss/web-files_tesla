@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Tesla - страница об авто</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed:400,700&display=swap&subset=cyrillic-ext"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="preloader" style="display: none">
+      <div class="prePreloader">
+        <img src="images/surface-tesla.svg" alt="Logo" />
+      </div>
+    </div>
+
+    <header class="header">
+      <div class="container">
+        <div class="header-top">
+          <div class="logo">
+            <a href="#">
+              <img src="images/logo.png" alt="Logo" class="logo-image" />
+            </a>
+          </div>
+          <!-- /.logo -->
+          <div class="header-btn">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+          <!-- /.header-btn -->
+        </div>
+        <!-- /.header-top -->
+        <div class="header-content">
+          <h1 class="header-content__title">
+            Roadster
+          </h1>
+          <div class="header-content__text">
+            Самый быстрый автомобиль в мире, с рекордным ускорением, дальностью
+            и производительностью.
+          </div>
+          <!-- /.header-content__text -->
+          <a href="#" class="header-content__btn">
+            Хочу тест драйв
+          </a>
+        </div>
+        <!-- /.header-content -->
+      </div>
+      <!-- /.container -->
+    </header>
+
+    <section class="slider-top">
+      <div class="slider">
+        <div
+          class="slider__item"
+          style="background-image: url(images/img4.jpg);"
+        ></div>
+        <div
+          class="slider__item"
+          style="background-image: url(images/img5.jpg);"
+        ></div>
+        <div
+          class="slider__item"
+          style="background-image: url(images/img6.jpg);"
+        ></div>
+        <div
+          class="slider__item"
+          style="background-image: url(images/img7.jpg);"
+        ></div>
+      </div>
+    </section>
+
+    <section class="statistics">
+      <div class="container">
+        <div class="statistics-items">
+          <div class="statistics-item">
+            <div class="statistics-item__title">Двигатель</div>
+            <div class="statistics-item__num">2,1<span>сек</span></div>
+            <div class="statistics-item__desc">разгон до 100 км/ч</div>
+          </div>
+          <!-- /.statistics-item -->
+          <div class="statistics-item">
+            <div class="statistics-item__title">Батарея</div>
+            <div class="statistics-item__num">1000<span>км</span></div>
+            <div class="statistics-item__desc">запас хода</div>
+          </div>
+          <!-- /.statistics-item -->
+          <div class="statistics-item">
+            <div class="statistics-item__title">Скорость</div>
+            <div class="statistics-item__num">400<span>км/ч</span></div>
+            <div class="statistics-item__desc">макс скорость</div>
+          </div>
+          <!-- /.statistics-item -->
+        </div>
+        <!-- /.statistics-items -->
+      </div>
+      <!-- /.container -->
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <iframe
+          width="1200"
+          height="400"
+          src="https://www.youtube.com/embed/tw4jkyfY4HE"
+          frameborder="0"
+          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+      $(window).on("load", function() {
+        $preloader = $(".preloader");
+        $loader = $preloader.find(".prePreloader");
+        $loader.fadeIn("slow");
+        $preloader.delay(4000).fadeOut("fast");
+      });
+    </script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
