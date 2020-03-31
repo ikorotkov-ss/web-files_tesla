@@ -160,8 +160,14 @@ body {
   font-size: 24px;
   line-height: 28px;
 }
-.statistics-item__num span::after {
+.statistics-item__num--speed-more span {
+  display: inline-block;
+  position: relative;
+}
+.statistics-item__num--speed-more span::before {
   content: "+";
+  position: absolute;
+  top: -60px;
 }
 .statistics-item__desc {
   color: #b70021;
@@ -172,6 +178,64 @@ body {
   margin-bottom: 100px;
 }
 
-/*-- Стили для блока видео --*/
+/*-- Стили для блока преимущества --*/
+.benefits-inner__row {
+  margin-bottom: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+.benefits-desc {
+  max-width: 570px;
+  width: 100%;
+}
+.benefits__title {
+  font-size: 36px;
+  line-height: 42px;
+  color: #b70021;
+  position: absolute;
+  top: 0;
+}
+.benefits__title--bottom {
+  right: 0;
+  bottom: 0;
+  top: auto;
+}
+.benefits__text {
+  width: 303px;
+}
+.benefits__text ul {
+  list-style: none;
+}
+.benefits__image img {
+  width: 570px;
+  height: 400px;
+}
 
-/*ТАЙМ-КОД ВИДЕО https://youtu.be/XrMVVyhTrec 43:50*/
+/*-- Стили для блока дизайн --*/
+.design {
+  margin-bottom: 100px;
+}
+.design__images {
+  margin-bottom: 100px;
+  width: 100%;
+}
+.design__images img {
+  width: 100%;
+}
+.design-row,
+.design-row__item {
+  display: flex;
+  justify-content: space-between;
+}
+.design-row__item-num {
+  margin-right: 75px;
+  color: #b70021;
+}
+.design-row__item-text {
+  width: 450px;
+  padding-top: 30px;
+}
+
+/*-- ТАЙМ-КОД ВИДЕО https://youtu.be/XrMVVyhTrec 1:48:50 --*/
