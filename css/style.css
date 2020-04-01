@@ -42,6 +42,18 @@ body {
   font-size: 24px;
   line-height: 28px;
 }
+.button {
+  display: inline-block;
+  font-weight: bold;
+  background: rgba(255, 255, 255, 0.15);
+  border: 1px solid #ffffff;
+  padding: 30px 62px;
+  transition: 0.5s all;
+}
+.button:hover,
+.button:focus {
+  background: #770302;
+}
 
 /*-- Стили для шапки --*/
 .header {
@@ -92,18 +104,6 @@ body {
 .header-content__text {
   width: 284px;
   margin-bottom: 25px;
-}
-.header-content__btn {
-  display: inline-block;
-  font-weight: bold;
-  background: rgba(255, 255, 255, 0.15);
-  border: 1px solid #ffffff;
-  padding: 30px 62px;
-  transition: 0.5s all;
-}
-.header-content__btn:hover,
-.header-content__btn:focus {
-  background: #770302;
 }
 
 /*-- Стили для слайдера --*/
@@ -236,6 +236,33 @@ body {
 .design-row__item-text {
   width: 450px;
   padding-top: 30px;
+}
+
+/*-- Стили для блока футер --*/
+.footer {
+  background-color: #690102;
+  padding: 83px 0 20px;
+}
+.footer-btn {
+  text-align: center;
+  margin-bottom: 83px;
+}
+.footer-copy {
+  text-align: center;
+  font-weight: 700;
+}
+.footer-copy ul {
+  list-style: none;
+}
+.footer-copy li {
+  display: inline-block;
+  padding: 0 10px;
+  position: relative;
+}
+.footer-copy li + li::before {
+  content: "|";
+  position: absolute;
+  left: -5px;
 }
 
 /*-- ТАЙМ-КОД ВИДЕО https://youtu.be/XrMVVyhTrec 1:48:50 --*/
