@@ -202,7 +202,8 @@ body {
   margin: -55px auto 0;
   position: relative;
   z-index: 6;
-  max-width: 1200px;
+  max-width: 1230px;
+  padding: 0 15px;
 }
 
 /*-- Стили для блока статистики --*/
@@ -335,4 +336,49 @@ body {
   left: -5px;
 }
 
-/*-- ТАЙМ-КОД ВИДЕО https://youtu.be/XrMVVyhTrec 1:48:50 --*/
+/*-- Стили для медиазапросов --*/
+@media (max-width: 1220px) {
+  .benefits__text {
+    padding-left: 20px;
+  }
+}
+@media (max-width: 820px) {
+  .statistics-items {
+    flex-wrap: wrap;
+  }
+  .statistics-item {
+    padding: 50px;
+  }
+}
+@media (max-width: 410px) {
+  .logo img {
+    width: 200px;
+  }
+  .header-content__title {
+    font-size: 70px;
+    line-height: 85px;
+    margin-top: 20px;
+  }
+  .menu__list ul {
+    width: 100%;
+  }
+  .menu__list a {
+    font-size: 30px;
+    line-height: 44px;
+    padding: 19px 10px 7px 0;
+    display: block;
+    min-width: 100%;
+  }
+  .statistics {
+    margin: 110px 0 50px;
+  }
+  .statistics-item {
+    padding: 25px 0;
+  }
+  .button {
+    padding: 20px 45px;
+  }
+  .video {
+    margin-bottom: 50px;
+  }
+}
